@@ -17,6 +17,10 @@ $("input").keypress(function (event) {
         // console.log("!!");
         var TodoText = $("input[type='text']").val();
         $("input[type='text']").val("");
-        $("ul").append("<li><span>A</span> " + TodoText + "</li>");
+        $("ul").append("<li><span><i class='fa fa-trash'></i></span> " + TodoText + "</li>");
     }
+});
+
+$(".fa-plus").click(function () {
+    $("input").fadeToggle();
 });
